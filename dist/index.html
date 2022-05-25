@@ -12,52 +12,61 @@
     <title>Frontend Mentor | Social proof section</title>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
-  <body class="flex justify-center items-center h-screen">
-    <section class="max-w-[70rem] ">
-      <div class="bg-[url('/images/bg-pattern-top-mobile.svg')] lg:bg-[url('/images/bg-pattern-top-desktop.svg')]"></div>
+  <body class="lg:flex justify-center items-center h-screen relative">
+    <div class="bg-hero">
       
-      <div class="max-w-[113rem] bg-red-400">
-      </div>
+    </div>
+      
+    <div class="bg-desktop-top-pattern absolute bottom-0 right-0 h-full w-full"></div>
 
-      <div class="grid grid-cols-2 h-auto mb-16 gap-[6rem]">
-        <div class="pr-[8rem]">
-          <h1 class="text-5xl text-[#502050] font-bold pb-6">10,000+ of our users love our products.</h1>
-          <p class="text-md text-[#502050] opacity-70">We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.</p>
+
+    <section class="xl:max-w-[70rem] p-8 xl:p-0 px-14 ">
+      <div class="md:grid md:grid-cols-2 h-auto mb-16 gap-[6rem]">
+        <div class="xl:pr-[6rem]">
+          <h1 class="xl:text-5xl text-[#502050] font-bold pb-6 text-center lg:text-left text-5xl mb-4">10,000+ of our users love our products.</h1>
+          <p class="text-md text-[#502050] opacity-70 text-center lg:text-left text-xl mb-12">We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.</p>
         </div>
-        <div class="mt-[2rem]">
-          <div class="bg-[#F7F2F7] rounded-md mb-4 py-4 inline-block ">
-            <div class="flex pl-6 pr-16 gap-2">
-              <img src="./images/icon-star.svg" alt="star image" class="">
-              <img src="./images/icon-star.svg" alt="star image" class="">
-              <img src="./images/icon-star.svg" alt="star image" class="">
-              <img src="./images/icon-star.svg" alt="star image" class="">
-              <img src="./images/icon-star.svg" alt="star image" class="">
-              <span class=" pl-4 text-[#502050] font-bold">Rated 5 Stars in Reviews</span>
+        <div class="xl:mt-[2rem] ">
+          <div class="bg-[#F7F2F7] rounded-md mb-4 py-4 block lg:inline-block ">
+            <div class="flex pl-6 pr-16 gap-2 flex-col lg:flex-row items-center justify-center mx-auto">
+              <div class="flex">
+                <img src="./images/icon-star.svg" alt="star image" class="">
+                <img src="./images/icon-star.svg" alt="star image" class="">
+                <img src="./images/icon-star.svg" alt="star image" class="">
+                <img src="./images/icon-star.svg" alt="star image" class="">
+                <img src="./images/icon-star.svg" alt="star image" class="">
+              </div>
+              <span class=" pl-4 text-[#502050] font-bold ">Rated 5 Stars in Reviews</span>
             </div>
           </div>
-          <div class="bg-[#F7F2F7] rounded-md mb-4 py-4 inline-block translate-x-10">
-            <div class="flex pl-6 pr-10 gap-2 ">
-              <img src="./images/icon-star.svg" alt="star image" class="">
-              <img src="./images/icon-star.svg" alt="star image" class="">
-              <img src="./images/icon-star.svg" alt="star image" class="">
-              <img src="./images/icon-star.svg" alt="star image" class="">
-              <img src="./images/icon-star.svg" alt="star image" class="">
-              <span class="pl-4 text-[#502050] font-bold">Rated 5 Stars in Report Guru</span>
+          <div class="bg-[#F7F2F7] rounded-md mb-4 py-4 block lg:inline-block xl:translate-x-12">
+            <div class="flex pl-6 pr-16 gap-2 items-center justify-center mx-auto flex-col lg:flex-row">
+              <div class="flex">
+                <img src="./images/icon-star.svg" alt="star image" class="">
+                <img src="./images/icon-star.svg" alt="star image" class="">
+                <img src="./images/icon-star.svg" alt="star image" class="">
+                <img src="./images/icon-star.svg" alt="star image" class="">
+                <img src="./images/icon-star.svg" alt="star image" class="">
+              </div>
+              <span class="pl-4 text-[#502050] font-bold ">Rated 5 Stars in Report Guru</span>
             </div>
           </div>
-          <div class="bg-[#F7F2F7] rounded-md mb-4 py-4 inline-block translate-x-20">
-            <div class="flex pl-6 pr-16 gap-2">
-              <img src="./images/icon-star.svg" alt="star image" class="">
-              <img src="./images/icon-star.svg" alt="star image" class="">
-              <img src="./images/icon-star.svg" alt="star image" class="">
-              <img src="./images/icon-star.svg" alt="star image" class="">
-              <img src="./images/icon-star.svg" alt="star image" class="">
-              <span class="pl-4 text-[#502050] font-bold">Rated 5 Stars in BestTech</span>
+          <div class="bg-[#F7F2F7] rounded-md mb-4 py-4 block lg:inline-block xl:translate-x-24">
+            <div class="flex pl-6 pr-16 gap-2 items-center justify-center mx-auto flex-col lg:flex-row">
+              <div class="flex">
+                <img src="./images/icon-star.svg" alt="star image" class="">
+                <img src="./images/icon-star.svg" alt="star image" class="">
+                <img src="./images/icon-star.svg" alt="star image" class="">
+                <img src="./images/icon-star.svg" alt="star image" class="">
+                <img src="./images/icon-star.svg" alt="star image" class="">
+              </div>
+              <span class="pl-4 text-[#502050] font-bold ">Rated 5 Stars in BestTech</span>
             </div>
+            
           </div>
         </div>
       </div>
-      <div class="flex h-auto gap-8 ">
+      <div class="md:flex grid grid-cols-1 h-auto gap-8 ">
         <div class="bg-[#502050] p-8 rounded-md">
           <div class="flex items-center gap-4 mb-6">
             <img src="./images/image-colton.jpg" alt="colton image" class="rounded-full h-12">
@@ -68,7 +77,7 @@
           </div>
           <p class="text-white text-sm">"We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"</p>
         </div>
-        <div class="bg-[#502050] p-8 rounded-md translate-y-5">
+        <div class="bg-[#502050] p-8 rounded-md lg:translate-y-5">
           <div class="flex items-center gap-4 mb-6">
             <img src="./images/image-irene.jpg" alt="irene image" class="rounded-full h-12">
             <div class="flex flex-col ">
@@ -78,7 +87,7 @@
           </div>
           <p class="text-white text-sm">"Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"</p>
         </div>
-        <div class="bg-[#502050] p-8 rounded-md translate-y-10">
+        <div class="bg-[#502050] p-8 rounded-md lg:translate-y-10">
           <div class="flex items-center gap-4 mb-6">
             <img src="./images/image-anne.jpg" alt="irene image" class="rounded-full h-12">
             <div class="flex flex-col ">
